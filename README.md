@@ -1,929 +1,467 @@
--- Achievement
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "DOORS MODE",
-    Desc = "EXECUTE",
-    Reason = 'IS TO UPDATE MODE V2',
-    Image = "11867753039/meme-hamster-xd",
-})
-
---[=[
-@class txt
-This is my First Class
---]=]
-
-print(os.date("%B"))
-
-print("Loading")
------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-local HardCore = {
-    Title = "The Pain Just Begain", -- Made by MuhammadGames and Volta
-    Desc = "Join a Match of HardCore For the First Time.",
-    Reason = "You executed the HardCore script.",
-    Image = "https://github.com/MuhXd/Models/blob/main/HardCoreDoors.png?raw=true",
-    id = 1,
-}
-
-local DepthW = {
-    Title = "Finally Free",
-    Desc = "Encounter Depth",
-    Reason = "Survive Depth",
-    Image = "https://github.com/MuhXd/DoorSuff/blob/main/DoorsModes/Png.png?raw=true",
-    id = 2,
-}
-
-local Ripper = {
-    Title = "The Entity Is Still Freezing",
-    Desc = "It's So Cold",
-    Reason = "Dont Survive Ripper",
-    Image = "https://github.com/MuhXd/DoorSuff/blob/main/DoorsModes/Png.png?raw=true",
-    id = 3,
-}
-
-local Smiles = {
-    Title = "Income The Frowners",
-    Desc = "Stop Smiling",
-    Reason = "Encounter and Survive Smiler",
-    Image = "https://tr.rbxcdn.com/533cbe35b1cf3d4e5d4f99278978563f/150/150/Image/Png",
-    id = 4,
-}
-
-local SmilesDie = {
-    Title = "Smile to Fail",
-    Desc = "Don't Smile",
-    Reason = "Encounter And Dont Survive Smiler",
-    Image = "https://tr.rbxcdn.com/533cbe35b1cf3d4e5d4f99278978563f/150/150/Image/Png",
-    id = 5,
-}
-
-local NightmareRush ={
-    Title = "Rush From Your Nightmares",
-    Desc = "Don't Be fooled",
-    Reason = "Encounter And Survive Nightmare Rush",
-    Image = "https://tr.rbxcdn.com/533cbe35b1cf3d4e5d4f99278978563f/150/150/Image/Png",
-    id = 6,
-}
-
-local NightmareAmbush ={
-    Title = "Ambush But Even Harder",
-    Desc = "Don't Be fooled",
-    Reason = "Encounter And Survive Nightmare Ambush",
-    Image = "https://tr.rbxcdn.com/533cbe35b1cf3d4e5d4f99278978563f/150/150/Image/Png",
-    id = 7,
-}
-
-local NightmareAmbush ={
-    Title = "Ambush But Even Harder",
-    Desc = "Don't Be fooled",
-    Reason = "Encounter And Survive Nightmare Ambush",
-    Image = "https://tr.rbxcdn.com/533cbe35b1cf3d4e5d4f99278978563f/150/150/Image/Png",
-    id = 8,
-}
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/Whitelist/NewKeySystem.lua"))()
-
-
-
-caa = 0
-tween = game:GetService("TweenService")
-local TestMultplayer = true
-if game:GetService("ReplicatedStorage"):FindFirstChild("Extacuted") then
-    warn("You have Already Loaded")
-
-    return false
+--Flashlight -- SCRIPT NOT MADE BY ME
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
 end
-local Test = Instance.new("Part")
-Test.Name = "Extacuted"
-Test.Parent = game:GetService("ReplicatedStorage")
-Test = 1
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Tool0 = Instance.new("Tool")
+Part1 = Instance.new("Part")
+Sound2 = Instance.new("Sound")
+SpecialMesh3 = Instance.new("SpecialMesh")
+SpotLight4 = Instance.new("SpotLight")
+LocalScript5 = Instance.new("LocalScript")
+LocalScript6 = Instance.new("LocalScript")
+ModuleScript7 = Instance.new("ModuleScript")
+Tool0.Name = "Flashlight"
+Tool0.Parent = mas
+Tool0.TextureId = "http://www.roblox.com/asset/?id=115955232"
+Tool0.Grip = CFrame.new(0.100000001, -0.400000006, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Tool0.GripPos = Vector3.new(0.10000000149011612, -0.4000000059604645, 0)
+Tool0.ToolTip = "Flashlight"
+Part1.Name = "Handle"
+Part1.Parent = Tool0
+Part1.CFrame = CFrame.new(10.9154053, 0.25, -18.9892578, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Part1.Orientation = Vector3.new(0, 90, 0)
+Part1.Position = Vector3.new(10.9154052734375, 0.25, -18.9892578125)
+Part1.Rotation = Vector3.new(0, 90, 0)
+Part1.Color = Color3.new(0.960784, 0.803922, 0.188235)
+Part1.Size = Vector3.new(0.5, 0.5, 2)
+Part1.BottomSurface = Enum.SurfaceType.Smooth
+Part1.BrickColor = BrickColor.new("Bright yellow")
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.brickColor = BrickColor.new("Bright yellow")
+Part1.FormFactor = Enum.FormFactor.Custom
+Part1.formFactor = Enum.FormFactor.Custom
+Sound2.Parent = Part1
+Sound2.SoundId = "http://www.roblox.com/asset/?id=115959318"
+Sound2.Volume = 1
+SpecialMesh3.Parent = Part1
+SpecialMesh3.MeshId = "http://www.roblox.com/asset/?id=115955313"
+SpecialMesh3.Scale = Vector3.new(0.699999988079071, 0.699999988079071, 0.699999988079071)
+SpecialMesh3.TextureId = "http://www.roblox.com/asset?id=115955343"
+SpecialMesh3.MeshType = Enum.MeshType.FileMesh
+SpotLight4.Parent = Part1
+SpotLight4.Enabled = false
+SpotLight4.Range = 40
+SpotLight4.Brightness = 10
+SpotLight4.Shadows = true
+LocalScript5.Parent = Tool0
+table.insert(cors,sandbox(LocalScript5,function()
+player = game.Players.LocalPlayer
+tool = script.Parent
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
+repeat wait() until player
 
-local SelfModules = {
-    Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))(),
-}
-
-
-
-
-
-
-------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-local ModName = "HardCore"
-local foldername = "AchievementsSaves   By Muhammadgames,Helped by RegularVynixu"
-local Slipt = string.split(foldername,"|")
-local valid2 = isfolder(foldername)
-if not valid2 then
-    makefolder(foldername)
-end
-
-local fileName = ModName.."Save's.txt"
-local filePath = foldername.. ";".. fileName
-local valid = isfile(filePath)
-
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/Models/main/RegularVynixu's%20Achievement%20Modifyer"))()
-
-function AchievementsGet(Achievement)
-    local read = readfile(filePath)  
-    local read2 = tostring(read)
-    local read2 = string.split(read,"|")
-    FOUND = true
-    Find = ""
-    for i,v in pairs(Achievement) do
-        if i == "id" then
-            Find=Find.." "..v
-        end
-    end
-
-    for i,v in pairs(read2) do
-        if v == Find then
-            FOUND = true
-        end
-    end -- Desc
-    if FOUND == false then
-        Achievements.Get(Achievement)
-        Write = ""
-        for i,v in pairs(Achievement) do
-            if i == "id" then
-                Write=Write.." "..v
-            end
-        end
-        appendfile(filePath,Write.."|")
-    end
-end
--- Creates and displays your custom achievement
--- readfile(<string> path)  
-if not valid then
-    writefile(filePath, "Helped by RegularVynixu|")
-end
-
-AchievementsGet(HardCore)
---[[
-------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------- 
-Start of real Code!
-DON'T SHOW ABOVE!
-.............     .       .
-.     .     .     .       . 
-.     .     .     .       .
-.     .     .     .       . 
-.     .     .     .       . 
-.     .     .     .       . 
-.     .     .     .       .
-.     .     .     .........
---]]
-
-
-
-
-
-
-
-
-
-
-
-
-if game:GetService("ReplicatedStorage"):FindFirstChild("Guis") then
-
-else
-    Visable = Instance.new("Folder")
-    Visable.Name = "Guis"
-    Visable.Parent = game.ReplicatedStorage
-
-end
-function Gui(Name,Amount1,TextSent)
-    if game:GetService("Players").localPlayer.PlayerGui.MainUI.Statistics.Frame:FindFirstChild("!"..Name.."!") then
-        game:GetService("Players").localPlayer.PlayerGui.MainUI.Statistics.Frame["!"..Name.."!"]:Destroy()
-    end
-
-    Visable = Instance.new("BoolValue")
-    Visable.Value = true
-    Visable.Name = Name
-    Visable.Parent = game.ReplicatedStorage.Guis
-
-    game.Players.localPlayer.PlayerGui.MainUI.Statistics.LocksOpened.Visible = true
-    LocksOpened = game.Players.localPlayer.PlayerGui.MainUI.Statistics.LocksOpened:Clone()
-    game.Players.localPlayer.PlayerGui.MainUI.Statistics.LocksOpened.Visible = false
-    LocksOpened.Parent = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame
-
-    LocksOpened.Visible = game.ReplicatedStorage.Guis:FindFirstChild(Name).Value
-
-    local Grad = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame["Leftover Gold"].UICorner:Clone()
-    Grad.Parent = LocksOpened
-    Grad = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame["Leftover Gold"].UIGradient:Clone()
-    Grad.Parent = LocksOpened
-    Grad = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame["Leftover Gold"].Amount:Clone()
-    Grad.Parent = LocksOpened
-    Grad.Text = Amount1
-    Grad.Position = Grad.Position - UDim2.new(0.035,0,0,0)
-    Grad = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame["Leftover Gold"].Icon:Clone()
-    Grad.Parent = LocksOpened
-    Grad.Position = Grad.Position - UDim2.new(0.035,0,0,0)
-
-    LocksOpened.CloseButton.Position = LocksOpened.CloseButton.Position - UDim2.new(0.021,0,0,0)
-    LocksOpened.CloseButton.ImageColor3 =  Color3.new(0.0313725, 0.854902, 1)
-    LocksOpened.TextColor3 = Color3.new(0.0313725, 0.854902, 1)
-    LocksOpened.TextScaled = false
-    LocksOpened.Name = "!"..Name.."!"
-    LocksOpened.TextSize = game.Players.localPlayer.PlayerGui.MainUI.Statistics.Frame["Leftover Gold"].TextSize + 16
-    LocksOpened.Size = LocksOpened.Parent["Leftover Gold"].Size
-    LocksOpened.BackgroundColor3 = Color3.new(0.0196078, 0.552941, 0.647059)
-    LocksOpened.BackgroundTransparency = 0.5
-
-    LocksOpened.Text = TextSent
-
-
-
-    game.ReplicatedStorage.Guis:FindFirstChild(Name).changed:connect(function()
-
-        LocksOpened.Visible = game.ReplicatedStorage.Guis:FindFirstChild(Name).Value
-    end)
-end
-
-
-
-
-
-
-
-local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-
-
--- Run the created entity
-local Message = function(Message,Enable,N)
-    local msg = Instance.new("Message")  
-    msg.Parent = game.Workspace     
-    msg.Text = Message
-    if Enable ~= true then
-        task.wait(0.1)
-        msg:Destroy()
-    end
-end
-
--- Message("Thank you For Loading MultplayerBeta 1.2")
-
-for ii,vv in pairs(game:GetService("Players"):GetChildren()) do
-    PlayersIngame = ii
-end -- Gets All Players
-if TestMultplayer == true then
-    PlayersIngame = 10 -- TestMultplayer
-end
-
-if PlayersIngame > 1 then -- if more then one then waits for link
-    if game:GetService("ReplicatedStorage").GameData.LatestRoom.Value > 0 then
-        print("Loaded After door 1! Please wait for everyone to die")
-        game.StarterGui:SetCore("ChatMakeSystemMessage", {
-            Text = "Load Before Door 1",
-            Color = Color3.fromRGB(255, 0, 0),
-            Font = Enum.Font.SourceSansBold,
-            TextSize = 18,
-        })
-
-        firesignal(game.ReplicatedStorage.Bricks.DeathHint.OnClientEvent, {"You didn't Load it Before Door 1!","Please Wait for the next round"})
-        game.ReplicatedStorage.GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Not Loading Before Door 1"
-        game.Players.LocalPlayer.Character.Humanoid.Health = -100
-        return false
-    end
-
-
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Doors Hard Mode ON! By MuhammadGames (MuhammadGames#0017) and Volta (volta#2161)",
-        Color = Color3.fromRGB(255, 0, 0),
-        Font = Enum.Font.SourceSansBold,
-        TextSize = 18,
-    })
-
-    Gui("HardMode","+1000","Hard Mode (Doesn't add Nobs)")
-
-    print("Loaded, Wating to Link to Multplayer") -- waiting to link
-
-game:GetService("ReplicatedStorage").GameData.LatestRoom.Changed:Connect(function(v)
-    L = game:GetService("Workspace").CurrentRooms[v].PathfindNodes:Clone()
-    L.Parent = game:GetService("Workspace").CurrentRooms[v]
-    L.Name = 'PathfindNodes'
+tool.Equipped:connect(function(mouse)
+	mouse.Button1Down:connect(function()
+		tool.Handle.SpotLight.Enabled = not tool.Handle.SpotLight.Enabled
+		tool.Handle.Sound:Play()
+	end)
 end)
-    
-    c=1
+end))
+LocalScript6.Parent = Tool0
+table.insert(cors,sandbox(LocalScript6,function()
+-- Variables for services
+local render = game:GetService("RunService").RenderStepped
+local contextActionService = game:GetService("ContextActionService")
+local userInputService = game:GetService("UserInputService")
 
-    repeat task.wait()
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local Tool = script.Parent
 
-        if c < 10 then
-            -- Message("MultplayerV1.2B",true,"Welcome")
-            c=10
-        end
-        --  msg:Destroy()
-        --Kill=true
-    until game:GetService("ReplicatedStorage").GameData.LatestRoom.Value > 0
-    print("Linked to Clients") -- linked
-    
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Linked To Clients",
-        Color = Color3.fromRGB(0, 255, 0),
-        Font = Enum.Font.SourceSansBold,
-        TextSize = 18,
-    })
+-- Variables for Module Scripts
+local screenSpace = require(Tool:WaitForChild("ScreenSpace"))
 
+local connection
 
+local neck, shoulder, oldNeckC0, oldShoulderC0
 
-    Singleplayer = false -- Runs more Then 1 Player Code
-else
-    print("Loaded in print Multiplayer") -- loaded in 1 player
-    repeat task.wait()
+local mobileShouldTrack = true
 
-    until game:GetService("ReplicatedStorage").GameData.LatestRoom.Value > 0
-    print("Started")
-    Singleplayer = true -- Runs One player Code
-end
-Testa = 10
-getgenv().death = false
-Be=false
-Many=1
-JobId = game:GetService("ReplicatedStorage").GameData.GameStarted.Value
-Lowest = string.len(game:GetService("ReplicatedStorage").GameData.GameStarted.Value)
-Lowest = tonumber(Lowest)
-Stop=Lowest
-RanWait2=""
-function Ripper()
-    while true do task.wait()
-    pcall(function()
-        Be=true
-
-        wait(30)
-        wait(10)
-        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-
-        -- Create entity
-        if  game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        else
-            Wait(20)
-            end
-        local Ripper = Creator.createEntity({
-            CustomName = "Ripper", -- Custom name of your entity
-            Model = "12262768551", -- Can be GitHub file or rbxassetid
-            Speed = 185, -- Percentage, 100 = default Rush speed
-            DelayTime = 9.8,
-            KillRange=100,-- Time before starting cycles (seconds)
-            HeightOffset = 1,
-            CanKill = true,
-            BreakLights = false,
-            FlickerLights = {
-                true, -- Enabled
-                0, -- Time (seconds)
-            },
-            Cycles = {
-                Min = 1,
-                Max = 1,
-                WaitTime = 1,
-            },
-            CamShake = {
-                true, -- Enabled
-                {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
-                100, -- Shake start distance (from Entity to you)
-            },
-            Jumpscare = {
-                true, -- Enabled ('false' if you don't want jumpscare)
-                {
-                    Image1 = "rbxassetid://11826279255", -- Image1 url
-                    Image2 = "rbxassetid://8158384019", -- Image2 url
-                    Shake = true,
-                    Sound1 = {
-                        4067643809, -- SoundId
-                        { Volume = 10 }, -- Sound properties
-                    },
-                    Sound2 = {
-                        4067643809, -- SoundId
-                        { Volume = 10 }, -- Sound properties
-                    },
-                    Flashing = {
-                        true, -- Enabled
-                        Color3.fromRGB(50, 115, 108), -- Color
-                    },
-                    Tease = {
-                        false, -- Enabled ('false' if you don't want tease)
-                        Min = 1,
-                        Max = 5,
-                    },
-                },
-            },
-            CustomDialog = {"You died to who you call Ripper", "Ripper is faster than rush", "And he can rebound 2 Times","use what you leared from Ambush and rush tho.","I am Nerfing All Of Entitys","To not spawn in No Hiding Spots Rooms"}, -- Custom death message (can be as long as you want)
-        })
-
------[[  Debug -=- Advanced  ]]-----
-Depth.Debug.OnEntityDespawned = function()
-            if getgenv().death == false then
-                AchievementsGet(RipperW)
-            end
+-- Thourough check to see if a character is sitting
+local function amISitting(character)
+	local t = character.Torso
+	for _, part in pairs(t:GetConnectedParts(true)) do
+		if part:IsA("Seat") or part:IsA("VehicleSeat") then
+			return true
+		end
+	end
 end
 
-            Depth.Debug.OnDeath = function()
-                getgenv().death = true
-                
-                AchievementsGet(Ripper)
-            end
-            
-            ------------------------
-
-            -- Run the created entity
-            Creator.runEntity(Depth)
-                            end)
-        end
-
-
+-- Function to call on renderstepped. Orients the character so it is facing towards
+-- the player mouse's position in world space. If character is sitting then the torso
+-- should not track
+local function frame(mousePosition)
+	-- Special mobile consideration. We don't want to track if the user was touching a ui
+	-- element such as the movement controls. Just return out of function if so to make sure
+	-- character doesn't track
+	if not mobileShouldTrack then return end
+	
+	-- Make sure character isn't swiming. If the character is swimming the following code will
+	-- not work well; the character will not swim correctly. Besides, who shoots underwater?
+	if player.Character.Humanoid:GetState() ~= Enum.HumanoidStateType.Swimming then
+		local torso = player.Character.Torso
+		local head = player.Character.Head
+		
+		local toMouse = (mousePosition - head.Position).unit
+		local angle = math.acos(toMouse:Dot(Vector3.new(0,1,0)))
+		
+		local neckAngle = angle
+	
+		-- Limit how much the head can tilt down. Too far and the head looks unnatural
+		if math.deg(neckAngle) > 110 then
+			neckAngle = math.rad(110)
+		end
+		neck.C0 = CFrame.new(0,1,0) * CFrame.Angles(math.pi - neckAngle,math.pi,0)
+		
+		-- Calculate horizontal rotation
+		local arm = player.Character:FindFirstChild("Right Arm")
+		local fromArmPos = torso.Position + torso.CFrame:vectorToWorldSpace(Vector3.new(
+			torso.Size.X/2 + arm.Size.X/2, torso.Size.Y/2 - arm.Size.Z/2, 0))
+		local toMouseArm = ((mousePosition - fromArmPos) * Vector3.new(1,0,1)).unit
+		local look = (torso.CFrame.lookVector * Vector3.new(1,0,1)).unit
+		local lateralAngle = math.acos(toMouseArm:Dot(look))		
+		
+		-- Check for rogue math
+		if tostring(lateralAngle) == "-1.#IND" then
+			lateralAngle = 0
+		end		
+		
+		-- Handle case where character is sitting down
+		if player.Character.Humanoid:GetState() == Enum.HumanoidStateType.Seated then			
+			
+			local cross = torso.CFrame.lookVector:Cross(toMouseArm)
+			if lateralAngle > math.pi/2 then
+				lateralAngle = math.pi/2
+			end
+			if cross.Y < 0 then
+				lateralAngle = -lateralAngle
+			end
+		end	
+		
+		-- Turn shoulder to point to mouse
+		shoulder.C0 = CFrame.new(1,0.5,0) * CFrame.Angles(math.pi/2 - angle,math.pi/2 + lateralAngle,0)	
+		
+		-- If not sitting then aim torso laterally towards mouse
+		if not amISitting(player.Character) then
+			torso.CFrame = CFrame.new(torso.Position, torso.Position + (Vector3.new(
+				mousePosition.X, torso.Position.Y, mousePosition.Z)-torso.Position).unit)
+		end	
+	end
 end
 
-    Stop=string.len(JobId)
-    caa=0
-    function SmilerSpawn()
-        
-        while true do task.wait()
-            pcall(function()
-                --   print("A-60")
-                wait(40)
-            
-
-
-
-                -- Create entity
-                local entity = Creator.createEntity({
-                    CustomName = "Rebound", -- Custom name of your entity
-                    Model = "11459817091", -- Can be GitHub file or rbxassetid
-                    Speed = 100, -- Percentage, 100 = default Rush speed
-                    DelayTime = 3, -- Time before starting cycles (seconds)
-                    HeightOffset = 1,
-                    CanKill = true,
-                    KillRange=100,
-                    BreakLights = true,
-                    FlickerLights = {
-                        true, -- Enabled
-                        5, -- Time (seconds)
-                    },
-                    Cycles = {
-                        Min = 5,
-                        Max = 5,
-                        WaitTime = 0.3,
-                    },
-                    CamShake = {
-                        true, -- Enabled
-                        {20, 20, 1, 2}, -- Shake values (don't change if you don't know)
-                        100, -- Shake start distance (from Entity to you)
-                    },
-                    Jumpscare = {
-                        false, -- Enabled ('false' if you don't want jumpscare)
-                        {
-                            Image1 = "rbxassetid://11417375410", -- Image1 url
-                            Image2 = "rbxassetid://11417375410", -- Image2 url
-                            Shake = true,
-                            Sound1 = {
-                                5263560566, -- SoundId
-                                { Volume = 2.1 }, -- Sound properties
-                            },
-                            Sound2 = {
-                                5263560566, -- SoundId
-                                { Volume = 2.1 }, -- Sound properties
-                            },
-                            Flashing = {
-                                true, -- Enabled
-                                Color3.fromRGB(255, 0, 0), -- Color
-                            },
-                            Tease = {
-                                false, -- Enabled ('false' if you don't want tease)
-                                Min = 1,
-                                Max = 3,
-                            },
-                        },
-                    },
-                    CustomDialog = {"¡¡ THIS SMILE IS LIKE ABMUSH !!", "Hide and don't Smile", "Don't get Tricked"}, -- Custom death message (can be as long as you want)
-                })
-
-                -----[[ Advanced ]]-----
-                entity.Debug.OnEntitySpawned = function()
-
-                end
-
-                entity.Debug.OnEntityDespawned = function()
-                    if getgenv().death == false then
-
-                        
-                        AchievementsGet(Smiles)
-                    end
-                    entity.Debug.OnEntityStartMoving = function()
-
-                    end
-
-                    entity.Debug.OnEntityFinishedRebound = function()
-
-                    end
-
-                    entity.Debug.OnDeath = function()
-                        getgenv().death = true
-                        
-                        AchievementsGet(SmilesDie)
-                    end
-                    ------------------------
-
-                    -- Run the created entity
-                    Creator.runEntity(entity)
-                end
-                end)
-    end
+-- Function to bind to render stepped if player is on PC
+local function pcFrame()
+	frame(mouse.Hit.p)
 end
 
-    function VhsSSpawn()
-        while true do wait(40)
-            pcall(function()
-                local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-
-                -- Create entity
-                local entity3 = Creator.createEntity({
-                    CustomName = "Ripper", -- Custom name of your entity
-                    Model = "12262768551", -- Can be GitHub file or rbxassetid
-                    Speed = 183, -- Percentage, 100 = default Rush speed
-                    DelayTime = 6.7, -- Time before starting cycles (seconds)
-                    HeightOffset = 9,
-                    CanKill = true,
-                    KillRange = 185,
-                    BreakLights = false,
-                    BackwardsMovement = false,
-                    FlickerLights = {
-                        true, -- Enabled/Disabled
-                        1, -- Time (seconds)
-                    },
-                    Cycles = {
-                        Min = 1,
-                        Max = 1,
-                        WaitTime = 0,
-                    },
-                    CamShake = {
-                        true, -- Enabled/Disabled
-                        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
-                        100, -- Shake start distance (from Entity to you)
-                    },
-                    Jumpscare = {
-                        false, -- Enabled/Disabled
-                        {
-                            Image1 = "rbxassetid://11826279255", -- Image1 url
-                            Image2 = "rbxassetid://8158384019", -- Image2 url
-                            Shake = true,
-                            Sound1 = {
-                                4067643809, -- SoundId
-                                { Volume = 10 }, -- Sound properties
-                            },
-                            Sound2 = {
-                                4067643809, -- SoundId
-                                { Volume = 10 }, -- Sound properties
-                            },
-                            Flashing = {
-                                true, -- Enabled/Disabled
-                                Color3.fromRGB(255, 255, 255), -- Color
-                            },
-                            Tease = {
-                                true, -- Enabled/Disabled
-                                Min = 1,
-                                Max = 1,
-                            },
-                        },
-                    },
-                    CustomDialog = {"You died to who you call Ripper...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
-                })
-
-                ------------------------
-                Creator.runEntity(entity3)
-                -- Run the created entity
-            end)
-        end
-    end
-
-    local function ZoO()
-        repeat
-            task.wait()
-        until game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets:FindFirstChild("Wardrobe")
-        -- tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0.45}):Play()
-        local ZoO = Creator.createEntity({
-            CustomName = "A-200", -- Custom name of your entity
-            Model = "https://github.com/Isth4t/DoorsModels/blob/main/200Moving.rbxm?raw=true", -- Can be GitHub file or rbxassetid
-            Speed = 700, -- Percentage, 100 = default Rush speed
-            DelayTime = 10, -- Time before starting cycles (seconds)
-            KillRange= 8,
-            HeightOffset = 0,
-            CanKill = true,
-            BreakLights = false,
-            BackwardsMovement = true,
-            FlickerLights = {
-                true, -- Enabled
-                5, -- Time (seconds)
-            },
-            Cycles = {
-                Min = 0,
-                Max = 0,
-                WaitTime = 2,
-            },
-            CamShake = {
-                true, -- Enabled
-                {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
-                100, -- Shake start distance (from Entity to you)
-            },
-            Jumpscare = {
-                true, -- Enabled ('false' if you don't want jumpscare)
-                {
-                    Image1 = "rbxassetid://11400868582", -- Image1 url
-                    Image2 = "rbxassetid://11400871105", -- Image2 url
-                    Shake = true,
-                    Sound1 = {
-                        530591527, -- SoundId
-                        { Volume = 0.5 }, -- Sound properties
-                    },
-                    Sound2 = {
-                        530591527, -- SoundId
-                        { Volume = 0.5 }, -- Sound properties
-                    },
-                    Flashing = {
-                        true, -- Enabled
-                        Color3.fromRGB(255, 255, 255), -- Color
-                    },
-                    Tease = {
-                        false, -- Enabled ('false' if you don't want tease)
-                        Min = 1,
-                        Max = 3,
-                    },
-                },
-            },
-            CustomDialog = {"You died to 200.", "It's very fast.", "Hide when you hear it!"}, -- Custom death message (can be as long as you want)
-        })
-        Creator.runEntity(ZoO)
-    end
-
-
-
-
-    function Baller()
-        wait(50)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()  
-        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-
-        local Baller = Creator.createEntity({
-            CustomName = "Baller", -- Custom name of your entity
-            Model = 11421844649,
-            KillRange=200,
-            Speed = 200, -- Percentage, 100 = default Rush speed
-            DelayTime = 3, -- Time before starting cycles (seconds)
-            HeightOffset = 0,
-            CanKill = false,
-            BreakLights = false,
-            FlickerLights = {
-                false, -- Enabled
-                5, -- Time (seconds)
-            },
-            Cycles = {
-                Min = 12,
-                Max = 12,
-                WaitTime = 3,
-            },
-            CamShake = {
-                false, -- Enabled
-                {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
-                1, -- Shake start distance (from Entity to you)
-            },
-            Jumpscare = {
-                false, -- Enabled ('false' if you don't want jumpscare)
-                {
-                    Image1 = "https://create.roblox.com/marketplace/asset/11151804229/baller?pageNumber=1&pagePosition=18&keyword=", -- Image1 url
-                    Image2 = "https://create.roblox.com/marketplace/asset/11151804229/baller?pageNumber=1&pagePosition=18&keyword=", -- Image2 url
-                    Shake = false,
-                    Sound1 = { 
-                        11400679305, -- SoundId
-                        { Volume = 1 }, -- Sound properties
-                    },
-                    Sound2 = {
-                        10483837590, -- SoundId
-                        { Volume = 0 }, -- Sound properties
-                    },
-                    Flashing = {
-                        false, -- Enabled
-                        Color3.fromRGB(70, 25, 0), -- Color
-                    },
-                    Tease = {
-                        false, -- Enabled ('false' if you don't want tease)
-                        Min = 1,
-                        Max = 1,
-                    },
-                },
-            },
-        })
-
-        ------------------------
-
-        -- Run the created entity
-        Creator.runEntity(Baller)
-
-    end
-
-    caa2=10
-
-    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
-        getgenv().death = true
-    end)
-    workspace.ChildAdded:Connect(function(inst)
-        wait(1)
-        if inst.Name == "RushMoving" then
-            BoolValue = Instance.new("BoolValue")
-            BoolValue.Name = "Nightmare"
-            BoolValue.Parent = inst
-            inst.RushNew.Attachment.ParticleEmitter.Texture = "http://www.roblox.com/asset/?id=10888024887"
-            inst.RushNew.Attachment.ParticleEmitter.Brightness = 10
-            repeat task.wait()
-
-            until not inst:FindFirstChild("RushNew")
-
-            if getgenv().death == false then
-
-
-                AchievementsGet(NightmareRush)
-
-            end
-            a =game:GetService("ReplicatedStorage").GameData.LatestRoom.Value-1
-            b=a+5
-            repeat  task.wait()
-
-            until game:GetService("ReplicatedStorage").GameData.LatestRoom.Value >= b
-    local BallerPas = coroutine.wrap(Baller)
-            BallerPas()
-
-        elseif inst.name == "AmbushMoving" then
-            BoolValue = Instance.new("BoolValue")
-            BoolValue.Name = "Nightmare"
-            BoolValue.Parent = inst
-            inst.RushNew.Attachment.ParticleEmitter.Texture = "https://create.roblox.com/marketplace/asset/10826375579/Nightmare-ambush-png-doors"
-            inst.RushNew.Attachment.ParticleEmitter.Brightness = 10
-            repeat task.wait()
-
-            until not inst:FindFirstChild("RushNew")
-
-            if getgenv().death == false then
-                AchievementsGet(NightmareAmbush)
-            end
-            a =game:GetService("ReplicatedStorage").GameData.LatestRoom.Value-1
-            b=a+2
-            repeat  task.wait()
-
-            until game:GetService("ReplicatedStorage").GameData.LatestRoom.Value >= b
-            ZoO()
-            BallerPas()
-
-        end
-    end)
-
-
-    i1=3 
-    i2=5
-    i3=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Be=false
-    function TrauSpawn()
-        while true do 
-        
-            wait(150)
-            local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-
-            -- Create entity
-            local Trau = Creator.createEntity({
-                CustomName = "Rebound", -- Custom name of your entity
-                Model = "12403179451", -- Can be GitHub file or rbxassetid
-                Speed = 100, -- Percentage, 100 = default Rush speed
-                DelayTime = 1.4,
-            KillRange=80,-- Time before starting cycles (seconds)
-            HeightOffset = 0,
-            CanKill = true,
-            BreakLights = false,
-                BackwardsMovement = true,
-                FlickerLights = {
-                    true, -- Enabled/Disabled
-                    2.5, -- Time (seconds)
-                },
-                Cycles = {
-                    Min = 1,
-                    Max = 1,
-                    WaitTime = 1,
-                },
-                CamShake = {
-                    true, -- Enabled/Disabled
-                    {5.5, 50, 0.5, 2}, -- Shake values (don't change if you don't know)
-                    100, -- Shake start distance (from Entity to you)
-                },
-                Jumpscare = {
-                    true, -- Enabled/Disabled
-                    {
-                        Image1 = " rbxassetid://11862656491", -- Image1 url
-                        Image2 = "rbxassetid://11862656491", -- Image2 url
-                        Shake = true,
-                        Sound1 = {
-                            0, -- SoundId
-                            { Volume = 10 }, -- Sound properties
-                        },
-                        Sound2 = {
-                            5567523008, -- SoundId
-                            { Volume = 10 }, -- Sound properties
-                        },
-                        Flashing = {
-                            true, -- Enabled/Disabled
-                            Color3.fromRGB(6, 38, 135), -- Color
-                        },
-                        Tease = {
-                            true, -- Enabled/Disabled
-                            Min = 1,
-                            Max = 3,
-                        },
-                    },
-                },
-                CustomDialog = {"You died to Rebound...", "Use what you've learned from Rush!","This Mob Randomly Spawns Theres No Patten to it"}, -- Custom death message
-            })
-
-            -----[[ Advanced ]]-----
-            ------------------------
-
-            -- Run the created entity
-            Creator.runEntity(Trau)
-        end
-    end
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pcall(function()
-local RipperPas = coroutine.wrap(Ripper)
-RipperPas()
-end)
-pcall(function()
-    local TraumaPas = coroutine.wrap(TrauSpawn)   
-    TraumaPas()
-end)
-pcall(function()
-local SmilerPas = coroutine.wrap(SmilerSpawn)
-SmilerPas()
-end)
-pcall(function()
-local VhsSansPas = coroutine.wrap(VhsSSpawn)
-VhsSansPas()
-end)
+-- Function to bind to touch moved if player is on mobile
+local function mobileFrame(touch, processed)
+	-- Check to see if the touch was on a UI element. If so, we don't want to update anything
+	if not processed then
+		-- Calculate touch position in world space. Uses Stravant's ScreenSpace Module script
+		-- to create a ray from the camera.
+		local test = screenSpace.ScreenToWorld(touch.Position.X, touch.Position.Y, 1)
+		local nearPos = game.Workspace.CurrentCamera.CoordinateFrame:vectorToWorldSpace(screenSpace.ScreenToWorld(touch.Position.X, touch.Position.Y, 1))
+		nearPos = game.Workspace.CurrentCamera.CoordinateFrame.p - nearPos
+		local farPos = screenSpace.ScreenToWorld(touch.Position.X, touch.Position.Y,50) 
+		farPos = game.Workspace.CurrentCamera.CoordinateFrame:vectorToWorldSpace(farPos) * -1
+		if farPos.magnitude > 900 then
+			farPos = farPos.unit * 900
+		end
+		local ray = Ray.new(nearPos, farPos)
+		local part, pos = game.Workspace:FindPartOnRay(ray, player.Character)
+		
+		-- if a position was found on the ray then update the character's rotation
+		if pos then
+			frame(pos)
+		end
+	end
+end
+
+local function OnActivated()
+	local myModel = player.Character
+	if Tool.Enabled and myModel and myModel:FindFirstChild('Humanoid') and myModel.Humanoid.Health > 0 then
+		Tool.Enabled = false
+		game.ReplicatedStorage.ROBLOX_RocketFireEvent:FireServer(mouse.Hit.p)
+		wait(2)
+
+		Tool.Enabled = true
+	end
+end
+
+local oldIcon = nil
+-- Function to bind to equip event
+local function equip()
+	local torso = player.Character.Torso
+	
+	-- Setup joint variables
+	neck = torso.Neck	
+	oldNeckC0 = neck.C0
+	shoulder = torso:FindFirstChild("Right Shoulder")
+	oldShoulderC0 = shoulder.C0
+	
+	-- Remember old mouse icon and update current
+	oldIcon = mouse.Icon
+	mouse.Icon = "rbxasset://textures\\GunCursor.png"
+	
+	-- Bind TouchMoved event if on mobile. Otherwise connect to renderstepped
+	if userInputService.TouchEnabled then
+		connection = userInputService.TouchMoved:connect(mobileFrame)
+	else
+		connection = render:connect(pcFrame)
+	end
+	
+	-- Bind TouchStarted and TouchEnded. Used to determine if character should rotate
+	-- during touch input
+	userInputService.TouchStarted:connect(function(touch, processed)
+		mobileShouldTrack = not processed
+	end)	
+	userInputService.TouchEnded:connect(function(touch, processed)
+		mobileShouldTrack = false
+	end)
+
+	-- If game uses filtering enabled then need to update server while tool is
+	-- held by character.
+	if workspace.FilteringEnabled then
+		while connection do
+			wait()
+			game.ReplicatedStorage.ROBLOX_RocketUpdateEvent:FireServer(neck.C0, shoulder.C0)
+		end
+	end
+end
+
+-- Function to bind to Unequip event
+local function unequip()
+	if connection then connection:disconnect() end
+	
+	mouse.Icon = oldIcon
+	
+	neck.C0 = oldNeckC0
+	shoulder.C0 = oldShoulderC0
+end
+
+-- Bind tool events
+Tool.Equipped:connect(equip)
+Tool.Unequipped:connect(unequip)
+Tool.Activated:connect(OnActivated)
+end))
+ModuleScript7.Name = "ScreenSpace"
+ModuleScript7.Parent = Tool0
+table.insert(cors,sandbox(ModuleScript7,function()
+local PlayerMouse = Game:GetService('Players').LocalPlayer:GetMouse()
+
+local ScreenSpace = {}
+
+-- Getter functions, with a couple of hacks for Ipad pre-focus.
+function ScreenSpace.ViewSizeX()
+	local x = PlayerMouse.ViewSizeX
+	local y = PlayerMouse.ViewSizeY
+	if x == 0 then
+		return 1024
+	else
+		if x > y then
+			return x
+		else
+			return y
+		end
+	end
+end
+
+function ScreenSpace.ViewSizeY()
+	local x = PlayerMouse.ViewSizeX
+	local y = PlayerMouse.ViewSizeY
+	if y == 0 then
+		return 768
+	else
+		if x > y then
+			return y
+		else
+			return x
+		end
+	end
+end
+
+-- Nice getter for aspect ratio. Due to the checks in the ViewSize functions this
+-- will never fail with a divide by zero error.
+function ScreenSpace.AspectRatio()
+	return ScreenSpace.ViewSizeX() / ScreenSpace.ViewSizeY()
+end
+
+-- WorldSpace -> ScreenSpace. Raw function taking a world position and giving you the
+-- screen position.
+function ScreenSpace.WorldToScreen(at)
+	local point = Workspace.CurrentCamera.CoordinateFrame:pointToObjectSpace(at)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	--
+	local x = (point.x/point.z) / -wfactor
+	local y = (point.y/point.z) /  hfactor
+	--
+	return Vector2.new(ScreenSpace.ViewSizeX()*(0.5 + 0.5*x), ScreenSpace.ViewSizeY()*(0.5 + 0.5*y))
+end
+
+-- ScreenSpace -> WorldSpace. Raw function taking a screen position and a depth and 
+-- converting it into a world position.
+function ScreenSpace.ScreenToWorld(x, y, depth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	--
+	local xf, yf = x/ScreenSpace.ViewSizeX()*2 - 1, y/ScreenSpace.ViewSizeY()*2 - 1
+	local xpos = xf * -wfactor * depth
+	local ypos = yf *  hfactor * depth
+	--
+	return Vector3.new(xpos, ypos, depth)
+end
+
+-- ScreenSize -> WorldSize
+function ScreenSpace.ScreenWidthToWorldWidth(screenWidth, depth)	
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx = ScreenSpace.ViewSizeX()
+	--
+	return -(screenWidth / sx) * 2 * wfactor * depth
+end
+function ScreenSpace.ScreenHeightToWorldHeight(screenHeight, depth)
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local sy = ScreenSpace.ViewSizeY()
+	--
+	return -(screenHeight / sy) * 2 * hfactor * depth
+end
+
+-- WorldSize -> ScreenSize
+function ScreenSpace.WorldWidthToScreenWidth(worldWidth, depth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx = ScreenSpace.ViewSizeX()
+	--
+	return -(worldWidth * sx) / (2 * wfactor * depth)
+end
+function ScreenSpace.WorldHeightToScreenHeight(worldHeight, depth)
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local sy = ScreenSpace.ViewSizeY()
+	--
+	return -(worldHeight * sy) / (2 * hfactor * depth)
+end
+
+-- WorldSize + ScreenSize -> Depth needed
+function ScreenSpace.GetDepthForWidth(screenWidth, worldWidth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx, sy = ScreenSpace.ViewSizeX(), ScreenSpace.ViewSizeY()
+	--
+	return -(sx * worldWidth) / (screenWidth * 2 * wfactor)	
+end
+function ScreenSpace.GetDepthForHeight(screenHeight, worldHeight)
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local sy = ScreenSpace.ViewSizeY()
+	--
+	return -(sy * worldHeight) / (screenHeight * 2 * hfactor)	
+end
+
+-- ScreenSpace -> WorldSpace. Taking a screen height, and a depth to put an object 
+-- at, and returning a size of how big that object has to be to appear that size
+-- at that depth.
+function ScreenSpace.ScreenToWorldByHeightDepth(x, y, screenHeight, depth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx, sy = ScreenSpace.ViewSizeX(), ScreenSpace.ViewSizeY()
+	--
+	local worldHeight = -(screenHeight/sy) * 2 * hfactor * depth
+	--
+	local xf, yf = x/sx*2 - 1, y/sy*2 - 1
+	local xpos = xf * -wfactor * depth
+	local ypos = yf *  hfactor * depth
+	--
+	return Vector3.new(xpos, ypos, depth), worldHeight
+end
+
+-- ScreenSpace -> WorldSpace. Taking a screen width, and a depth to put an object 
+-- at, and returning a size of how big that object has to be to appear that size
+-- at that depth.
+function ScreenSpace.ScreenToWorldByWidthDepth(x, y, screenWidth, depth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx, sy = ScreenSpace.ViewSizeX(), ScreenSpace.ViewSizeY()
+	--
+	local worldWidth = (screenWidth/sx) * 2 * -wfactor * depth
+	--
+	local xf, yf = x/sx*2 - 1, y/sy*2 - 1
+	local xpos = xf * -wfactor * depth
+	local ypos = yf *  hfactor * depth
+	--
+	return Vector3.new(xpos, ypos, depth), worldWidth
+end
+
+-- ScreenSpace -> WorldSpace. Taking a screen height that you want that object to be
+-- and a world height that is the size of that object, and returning the position to
+-- put that object at to satisfy those.
+function ScreenSpace.ScreenToWorldByHeight(x, y, screenHeight, worldHeight)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx, sy = ScreenSpace.ViewSizeX(), ScreenSpace.ViewSizeY()
+	--
+	local depth = - (sy * worldHeight) / (screenHeight * 2 * hfactor)
+	--
+	local xf, yf = x/sx*2 - 1, y/sy*2 - 1
+	local xpos = xf * -wfactor * depth
+	local ypos = yf *  hfactor * depth
+	--
+	return Vector3.new(xpos, ypos, depth)
+end
+
+-- ScreenSpace -> WorldSpace. Taking a screen width that you want that object to be
+-- and a world width that is the size of that object, and returning the position to
+-- put that object at to satisfy those.
+function ScreenSpace.ScreenToWorldByWidth(x, y, screenWidth, worldWidth)
+	local aspectRatio = ScreenSpace.AspectRatio()
+	local hfactor = math.tan(math.rad(Workspace.CurrentCamera.FieldOfView)/2)
+	local wfactor = aspectRatio*hfactor
+	local sx, sy = ScreenSpace.ViewSizeX(), ScreenSpace.ViewSizeY()
+	--
+	local depth = - (sx * worldWidth) / (screenWidth * 2 * wfactor)
+	--
+	local xf, yf = x/sx*2 - 1, y/sy*2 - 1
+	local xpos = xf * -wfactor * depth
+	local ypos = yf *  hfactor * depth
+	--
+	return Vector3.new(xpos, ypos, depth)
+end
+
+return ScreenSpace
+
+
+
+
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.Backpack
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
